@@ -1,0 +1,179 @@
+@font-face {
+    font-family: norse-bold;
+    src: url(https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display : flex;
+    min-height : 100%;
+    flex-direction: row;
+    align-items: stretch;
+    margin: 0%;
+}
+
+.left-pane {
+    background-image: url('background_image.avif');
+    background-size: cover;
+
+    max-width : 35%;
+    min-height: 100%;
+    flex : 0 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    padding-top: 10%;
+}
+
+.odin-panel {
+    max-height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    flex: 0 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.odin-panel img {
+    object-fit: cover;
+    max-height: 100%;
+    max-width: 100%;
+
+    flex: 0 0 auto;
+}
+
+.odin-text {
+    font-size: 75px;
+    color: white;
+    font-family: norse-bold;
+    vertical-align: center;
+
+    flex: 0 0 auto;
+
+    display: flex;
+    align-items: center; /* Centers the text vertically */
+    justify-content: center; /* Optionally centers the text horizontally */
+    height: 100%; /* Ensure the div takes up the full height */
+}
+
+.right-pane {
+    background-color: rgb(250,250,250);
+
+    flex: 1 1 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.description {
+    flex: 0 0 auto;
+
+    padding: 5%;
+}
+
+.description p {
+    font-weight: bold;
+}
+
+.form {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.input-box {
+    background-color: white;
+    flex: 0 0 auto;
+    padding-left: 5%;
+    padding-bottom: 20px;
+    box-shadow: 0px 3px 5px gray;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.form-header {
+    font-weight: bold;
+    font-size: 20px;
+    max-height: 100%
+}
+
+.form-header p {
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.row {
+    flex: 0 0 auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 30px;
+}
+
+.input-field {
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field label {
+    font-size: 10px;
+    padding-bottom: 2px;
+}
+
+.create-account-button {
+    padding-left: 5%;
+    padding-top: 3%;    
+}
+
+.create-account-button button {
+    background-color: #596D48; /* Green */
+    color: white;
+    padding: 10px 32px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px gray;
+}
+
+input:focus {
+    border-color: blue;
+    box-shadow: 2px 2px 2px gray;
+}
+
+input {
+    border-color: #E5E7EB;
+}
+
+input:invalid {
+    border-color: red;
+    border-width: thin;
+}
+
+.log-in-text {
+    padding-left: 5%;
+    padding-top: 1px;  
+}
